@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JACOBSPACE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="updated">
+        LAST UPDATED: 04 OCT 2026
+    </div>
+
+    <header>
+
+        <div class="header-title">
+            <h1>JACOBSPACE</h1>
+
+            <div class="header-buttons">
+                <button>DAILY CLICK</button>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#characters">CHARACTERS</a>
+            <a href="#music">MUSIC</a>
+            <a href="#favs">LIKES</a>
+            <a href="#links">LINKS</a>
+
+            <div class="fake-search">
+                bruh &nbsp; who's this? 🔍
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="profile-card">
+
+            <div class="profile-image">
+                <img src="profile.png" alt="Jacob">
+            </div>
+
+            <div class="profile-label">
+                >> JACOB, HE/HIM
+            </div>
+
+        </div>
+
+
+        <div class="welcome-box">
+
+            <div class="scribble">★</div>
+
+            <h2>wsg cuddy</h2>
+
+            <div class="scroll-box">
+
+                <p>
+                    hhello i'm <b>jacob</b> :]
+                </p>
+
+                <p>
+                    welcome to my little corner
+                    of the internet ig
+                </p>
+
+                <p>
+                    i'm an artist and i mostly
+                    draw whatever i'm currently
+                    obsessed with.
+                </p>
+
+                <p>
+                    he/him preferred!
+                    any pronouns are okay too.
+                </p>
+
+                <p>
+                    feel free to look around (page is in wip)
+                </p>
+
+            </div>
+
+            <span class="scroll-note">
+                (this box is scrollable)
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-layout">
+
+        <div class="paper-box">
+
+            <h2>[ BASIC INFO ]</h2>
+
+            <p>
+                <b>MY ALIASES:</b> John/Jacob/Duse/etc...
+            </p>
+
+            <p>
+                <b>PRONOUNS:</b> he/him preferred
+            </p>
+
+            <p>
+                <b>ANY PRONOUNS:</b> okay!
+            </p>
+
+            <p>
+                <b>STATUS:</b> drawing something probably
+            </p>
+
+        </div>
+
+
+        <div class="black-box">
+
+            <h2>ABOUT ME BRUH</h2>
+
+            <p>
+                I draw when I feel like it,
+                listen to music way too much,
+                and occasionally make websites
+                instead of doing something useful.
+            </p>
+
+            <p>
+                I like fictional characters,
+                original characters, fanart,
+                weird internet aesthetics,
+                and collecting random interests. Multifandom, also!
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CURRENTLY ================= -->
+
+    <section class="currently">
+
+        <div class="currently-title">
+            >> CURRENTLY OBSESSED WITH...
+        </div>
+
+        <div class="marquee">
+            <span>
+                DRAWING ★ MUSIC ★ SLEEPY ★
+                OLD INTERNET ★ 90S ★
+                DRAWING ★ MUSIC ★ UHH WRITING IG ★
+            </span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHARACTERS ================= -->
+
+    <section class="characters" id="characters">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-number">04</span>
+                <h2>CHARACTERS</h2>
+            </div>
+
+            <span class="section-subtitle">
+                ORIGINAL CHARACTER ARCHIVE
+            </span>
+        </div>
+
+        <div class="warning">
+            <span>⚠ NOTICE:</span>
+            fictional characters / original creations
+        </div>
+
+        <div class="character-grid">
+
+            <div class="character-card" onclick="openCharacter(0)">
+                <div class="case-number">CASE 001</div>
+
+                <div class="character-image">
+                    <img src="oc1.png" alt="OC 1">
+                </div>
+
+                <div class="character-info">
+                    <h3>CONSTANTINE M.</h3>
+                    <p>original character</p>
+                </div>
+            </div>
+
+            <div class="character-card" onclick="openCharacter(1)">
+                <div class="case-number">CASE 002</div>
+
+                <div class="character-image">
+                    <img src="oc2.png" alt="OC 2">
+                </div>
+
+                <div class="character-info">
+                    <h3>CHARACTER TWO</h3>
+                    <p>original character / creator archive</p>
+                </div>
+            </div>
+
+            <div class="character-card" onclick="openCharacter(2)">
+                <div class="case-number">CASE 003</div>
+
+                <div class="character-image">
+                    <img src="oc3.png" alt="OC 3">
+                </div>
+
+                <div class="character-info">
+                    <h3>CHARACTER THREE</h3>
+                    <p>original character / creator archive</p>
+                </div>
+            </div>
+
+            <div class="character-card" onclick="openCharacter(3)">
+                <div class="case-number">CASE 004</div>
+
+                <div class="character-image">
+                    <img src="oc4.png" alt="OC 4">
+                </div>
+
+                <div class="character-info">
+                    <h3>CHARACTER FOUR</h3>
+                    <p>original character / creator archive</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <dialog class="character-dialog" id="character-dialog" aria-labelledby="character-dialog-title">
+        <button class="character-dialog-close" type="button" aria-label="Close character">×</button>
+        <img src="" alt="">
+        <h2 id="character-dialog-title"></h2>
+        <p></p>
+    </dialog>
+
+
+    <!-- ================= MUSIC ================= -->
+
+    <section class="music" id="music">
+
+        <div class="section-number">03</div>
+
+        <div class="section-content">
+
+            <h2>MUSIC</h2>
+
+            <div class="music-player">
+
+                <div class="album-placeholder" aria-label="Vinyl record">
+                    <div class="vinyl" id="vinyl" aria-hidden="true">
+                        <div class="vinyl-label">J</div>
+                    </div>
+                </div>
+
+                <div class="playlist">
+
+                    <button class="song" type="button" data-audio="London After Midnight - The Bondage Song.mp3" data-title="THE BONDAGE SONG - LONDON AFTER MIDNIGHT">
+                        <span>01</span>
+                        <strong>THE BONDAGE SONG - LONDON AFTER MIDNIGHT</strong>
+                        <small aria-hidden="true">▶</small>
+                    </button>
+
+                    <button class="song" type="button" data-audio="Sacrifice by LONDON AFTER MIDNIGHT [with lyrics].mp3" data-title="SACRIFICE - LONDON AFTER MIDNIGHT">
+                        <span>02</span>
+                        <strong>SACRIFICE - LONDON AFTER MIDNIGHT</strong>
+                        <small aria-hidden="true">▶</small>
+                    </button>
+
+                    <button class="song" type="button" data-audio="I Luv U.mp3" data-title="I LUV U - MISS CONSTRUCTION">
+                        <span>03</span>
+                        <strong>I LUV U - MISS CONSTRUCTION</strong>
+                        <small aria-hidden="true">▶</small>
+                    </button>
+
+                    <button class="song" type="button" data-audio="Snake River Conspiracy - Love Song.mp3" data-title="LOVESONG - SNAKE RIVER CONSPIRACY">
+                        <span>04</span>
+                        <strong>LOVESONG - SNAKE RIVER CONSPIRACY</strong>
+                        <small aria-hidden="true">▶</small>
+                    </button>
+
+                    <button class="song" type="button" data-audio="Danger Deluca.mp3" data-title="DANGER DELUCA - RINSE & REPEAT">
+                        <span>05</span>
+                        <strong>DANGER DELUCA - RINSE & REPEAT</strong>
+                        <small aria-hidden="true">▶</small>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="audio-player">
+                <div id="now-playing" aria-live="polite">SELECT A SONG</div>
+                <audio id="audioPlayer" controls preload="none">
+                    Your browser does not support audio.
+                </audio>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAVS ================= -->
+
+    <section id="favs" class="favs-section">
+
+        <div class="fav-paper">
+
+            <h2>WHAT I LIKE</h2>
+
+            <ul>
+                <li>drawing</li>
+                <li>listening to music</li>
+                <li>sleeping</li>
+                <li>original characters</li>
+                <li>brownie</li>
+                <li>old websites</li>
+                <li>making silly pages</li>
+            </ul>
+
+        </div>
+
+
+        <div class="fav-warning">
+
+            <h2>IMPORTANT!!</h2>
+
+            <p>
+                i will probably talk about
+                whatever i'm obsessed with
+                at the moment.
+            </p>
+
+            <div class="blink">
+                ★ WARNING: ROTATING INTERESTS ★
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LINKS ================= -->
+
+    <section id="links" class="links-section">
+
+        <div class="section-heading">
+            >> FIND ME !!
+        </div>
+
+        <div class="links-grid">
+
+            <a href="https://discord.com/users/sardonicnomour" target="_blank">
+                DISCORD: @sardonicnomour
+            </a>
+
+            <a href="https://www.tiktok.com/@seretanyn5" target="_blank">
+                TIKTOK
+            </a>
+
+            <a href="https://www.instagram.com/sardonicnomour" target="_blank">
+                INSTAGRAM
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            JACOBSPACE © 2026
+        </p>
+
+        <p>
+            made with HTML, CSS & questionable decisions
+        </p>
+
+        <p>
+            BEST VIEWED WITH THE VOLUME TURNED UP
+        </p>
+
+    </footer>
+
+</div>
+
+
+<!-- ================= FLOATING STICKERS ================= -->
+
+<div class="sticker star">★</div>
+<div class="sticker star2">★</div>
+<div class="sticker sparkle">✦</div>
+<div class="sticker arrow">↯</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
