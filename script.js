@@ -37,7 +37,9 @@ dailyClick.addEventListener("click", () => {
         "daily click achieved",
         "congratulations i guess",
         "★ CLICK REGISTERED ★",
-        "there was absolutely no reason to do that"
+        "there was absolutely no reason to do that",
+        "what r u looking for kier",
+        "how was ur day",
     ];
 
     const randomMessage =
