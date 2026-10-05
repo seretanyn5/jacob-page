@@ -1175,6 +1175,106 @@ footer {
     transform: rotate(-25deg);
 }
 
+/* =========================
+   SILENT JUMPSCARE
+========================= */
+
+#jumpscare {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 99999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #000;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+#jumpscare.active {
+    visibility: visible;
+
+    opacity: 1;
+}
+
+#scareImage {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    opacity: 0;
+}
+
+#scareImage img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    filter: grayscale(100%) contrast(1.4);
+}
+
+#scareText {
+    position: absolute;
+
+    bottom: 12%;
+
+    color: #b00000;
+
+    font-family: "Special Elite", monospace;
+
+    font-size: clamp(28px, 5vw, 60px);
+
+    opacity: 0;
+}
+
+#jumpscare.active #scareImage {
+    animation: revealScare 1s 5s forwards;
+}
+
+#jumpscare.active #scareText {
+    animation: revealText 1s 7s forwards;
+}
+
+@keyframes revealScare {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes revealText {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* =========================
    MOBILE

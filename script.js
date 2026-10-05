@@ -28,8 +28,17 @@ document.addEventListener("mousemove", (event) => {
 // =========================
 
 const dailyClick = document.querySelector(".header-buttons button");
+const jumpscare = document.querySelector("#jumpscare");
+const maxDailyClicks = 30;
+let dailyClickCount = 0;
+let jumpscareActive = false;
 
 dailyClick.addEventListener("click", () => {
+    if (jumpscareActive) {
+        return;
+    }
+
+    dailyClickCount += 1;
 
     const messages = [
         "you found the button.",
@@ -42,12 +51,30 @@ dailyClick.addEventListener("click", () => {
         "how was ur day",
     ];
 
+    if (dailyClickCount === maxDailyClicks) {
+        triggerJumpscare();
+        return;
+    }
+
     const randomMessage =
         messages[Math.floor(Math.random() * messages.length)];
 
     alert(randomMessage);
 
 });
+
+function triggerJumpscare() {
+    jumpscareActive = true;
+    jumpscare.setAttribute("aria-hidden", "false");
+    jumpscare.classList.add("active");
+
+    setTimeout(() => {
+        jumpscare.classList.remove("active");
+        jumpscare.setAttribute("aria-hidden", "true");
+        jumpscareActive = false;
+        dailyClickCount = 0;
+    }, 9000);
+}
 
 
 // =========================
